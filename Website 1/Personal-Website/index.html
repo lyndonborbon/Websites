@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web 1</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/1761cd5060.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--Navbar Section-->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" id="navbar-logo">Welcome</a>
+      <div class="navbar-toggle" id="mobile-mode">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu">
+        <li class="home">
+          <a href="#home" >Home</a>
+        </li>
+        <li class="projects">
+          <a href="#projects"> Projects</a>
+        </li>
+        <li class="about-me">
+          <a href="#about-me">About Me</a>
+        </li>
+        <li class="contact">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Main Body Section-->
+  <div class="main">
+    <div class="main-container">
+      <section id="home">
+        <div class="home-text"> 
+           <h1><span class="text_1">Hi&nbsp;! &nbspWelcome to my site&nbsp;!</span>
+            <span class="text_2">My name is Lyndon!</span></h1>
+          <h3>&nbsp; &nbsp;I'm a Self-taught developer</h3>
+        </div>
+        <div class="home-image"></div>
+      </section>
+      <section id="projects">
+        <div class="project-container">
+          <div class="project-img">
+            <img class="thumbnail" src="images/minimalism-rock-paper-scissors-wallpaper-preview.jpg" alt="">
+            <div class="overlay" onclick="window.open('Project-1/index.html', '_blank');">
+              <div class="image-title">Rock, Paper, <br> &ensp; Scissors</div>
+              <p class="image-description">This is a simple game of rock, paper, scissors against the computer.</p>
+            </div>
+          </div>
+          <div class="project-detail"> 
+            <h1>Project 1</h1>
+          </div> 
+        </div>
+        <div class="project-container">
+          <div class="project-img">
+            <img class="thumbnail" src="images/tree-way.jpg" alt="">
+            <div class="overlay" onclick="window.open('project-2.html', '_blank');">
+              <div class="image-title"></div>
+              <p class="image-description"></p>
+            </div>
+          </div>
+          <div class="project-detail"> 
+            <h1>Project 2</h1>
+          </div> 
+        </div>
+        <div class="project-container">
+          <div class="project-img">
+            <img class="thumbnail" src="images/road.jpg" alt="" >
+            <div class="overlay" onclick="window.open('project-3.html', '_blank');">
+              <div class="image-title"></div>
+              <p class="image-description"></p>
+            </div>
+          </div>
+          <div class="project-detail"> 
+            <h1>Project 3</h1>
+          </div> 
+        </div>
+      </section>
+       <section id="about-me">
+        <div class="about-me-img"></div>
+        <div class="about-me-detail">
+          <h1>About me</h1>
+          <p>Hello!&nbsp; I have basic knowledge and skills in <br> programming 
+            languages such as Python, C, <br> SQL, HTML, CSS and Javascript. </p>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-detail"> <h1><span class="text-1">Contact Me&nbsp! &nbsp(+63)9479336960&nbsp</span>
+          <span class="text-2">Or through my socials below!</span></h1> </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/lyndonborbon011/" class="social-icon-link-1" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/lyndon_borbon" class="social-icon-link-2" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&Email=borbonjohnlyndon@gmail.com&continue=https://mail.google.com/mail/u/borbonjohnlyndon@gmail.com/
+          " class="social-icon-link-3" target="_blank">
+            <i class="fab fa-google" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
