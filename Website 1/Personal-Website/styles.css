@@ -10,7 +10,7 @@
 
 /*Navigation*/
 .navbar {
-    background: #353535;
+    background: black;
     height: 60px;
     display: flex;
     align-items: center;
@@ -87,13 +87,13 @@
 }
 
 .main {
-    background: gray;
+    background: #151515;
 }
 
 
 @media screen and (max-width: 960px) {
     .navbar {
-        background: #353535;
+        background: black;
         height: 60px;
         display: flex;
         align-items: center;
@@ -193,7 +193,7 @@
 /* Main Body */
 
 #home {
-    background-color: rgba(255, 255, 255, 0.443);
+    background-color: #05030eee;
     display: grid;
     grid-template-columns: 1fr 1fr;
     
@@ -203,7 +203,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    color: rgb(51, 30, 30);
+    color: white;
 }
 
 .home-text .text_1,.text_1::after {
@@ -238,7 +238,7 @@
 
 
 #projects {
-    background-color: rgba(255, 255, 255, 0.443);
+    background-color: #05030eee;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -246,29 +246,60 @@
 }
 
 .project-container {
-    width: 100%;
+    margin-top: 70px;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 
 .project-img {
     display: flex;
+    border: 2px solid rgb(192, 183, 183);
     justify-content: center;
-    width: 100%;
-    height: 50%;
+    width: 50%;
+    height: 80%;
     position: relative;
 }
+
+.prev, .next {
+    position: relative;
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} 
+
+.prev {
+    margin-left: 100px;
+    border-radius: 3px 0 0 3px;
+}
+.next {
+    margin-right: 100px;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgb(33, 33, 33);
+}
+  
 
 .overlay {
     position: absolute;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     height: 0;
-    background-color: rgb(145, 145, 205);
+    background-color: rgb(38, 38, 53);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -281,7 +312,7 @@
 }
 
 .project-img:hover .overlay {
-    opacity: 1;
+    opacity: .9;
     height: 100%;
 }
 
@@ -294,7 +325,7 @@
 }
 
 .thumbnail {
-    width: 50%;
+    width: 100%;
     object-fit: cover;
     cursor: pointer;
 }
@@ -303,11 +334,15 @@
 .project-detail {
    display: flex;
    position: relative;
-   color: rgb(51, 30, 30);
+   color: white;
+}
+
+.image-description {
+   text-align: center;
 }
 
 #about-me {
-    background-color: rgba(255, 255, 255, 0.443);
+    background-color: #05030eee;
     display: flex;
     justify-content: space-between;
 }
@@ -328,6 +363,7 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 120px;
+  color: white;
 }
 
 .about-me-detail h1 {
@@ -342,17 +378,12 @@
 
 .about-me-detail p {
     font-weight: 700;
-    background-image: linear-gradient(to right, #4f4fce 0%, #2727d3 50%, #16035b 100% );
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 
 
 #contact {
-    background-color: rgba(255, 255, 255, 0.443);
+    background-color: #05030eee;
     display: flex;
     flex-direction: column;
 }
@@ -367,7 +398,7 @@
 @media screen and (max-width: 960px) {
 
     #home {
-        background-color: rgba(255, 255, 255, 0.443);
+        background-color: #05030eee;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -399,7 +430,7 @@
     }
 
     #about-me {
-        background-color: rgba(255, 255, 255, 0.443);
+        background-color: #05030eee;
         display: flex;
         flex-direction: column;
         

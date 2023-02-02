@@ -1,4 +1,3 @@
-
 const sections = document.querySelectorAll('.main-container section');
 const navLi = document.querySelectorAll('.navbar-menu li');
 
@@ -7,7 +6,6 @@ window.addEventListener('scroll', () => {
   sections.forEach( section => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    console.log(sectionTop);
     if(scrollY >= (sectionTop - sectionHeight / 3)) {
       current = section.getAttribute('id');
     }
@@ -22,8 +20,6 @@ window.addEventListener('scroll', () => {
 })
 
 
-
-
 const mode = document.querySelector('#mobile-mode');
 const menuLink = document.querySelector('.navbar-menu');
 
@@ -32,3 +28,21 @@ mode.addEventListener('click', function() {
     menuLink.classList.toggle('active');
 });
 
+let slideIndex = 1;
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("project-container");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "flex";  
+}
+
+showSlides(slideIndex);
